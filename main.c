@@ -1,14 +1,17 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include"./lib/simpleCalc.h"
 
 
 int main(int argc,char** args){
-    printf("Simple demo of CTest framework");
-    int a =1;
-    int b =2;
+    printf("Simple demo of CTest framework \n");
+    
+    int a =atoi(args[1]);
+    int b =atoi(args[2]);
     int c = add(a,b);
 
-    printf("\n %i",c);
+    printf("Adding %d and %d \n",a,b);
+    printf("result=%d \n",c);
 }
 
 /*
